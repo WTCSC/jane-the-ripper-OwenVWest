@@ -30,13 +30,17 @@ def PasswordCrack(hash_file, wordlist_file, hashtype): #paths for hash and wordl
                     finallist.append(f"[-] Failed, {hashCurrent}")
     return finallist
 def main():
-    type_out("-------Hash Cracking Start-------\n\n")
+    
     hash_file = input("Input path to hash list file: ") # jane-the-ripper-OwenVWest/hashes.txt
     word_file = input("Input path to word list file: ") # jane-the-ripper-OwenVWest/wordlist.txt
     typehash = input("What type of hash do you want to use? (md5, SHA-1 and SHA-256 are supported): ")
+    type_out("\n-------Hash Cracking Start-------\n\n")
     outputlist = PasswordCrack(hash_file, word_file, typehash)
     for item in outputlist:
         print(item)
     type_out("\n-------Hash Cracking End-------")
-    print("\n\n[!] All hashes cracked successfully!\n")
+    if outputlist == ["Failed"]:
+        print("\n\n[/] All hashes failed succsessfully\n")
+    else:
+        print("\n\n[!] All hashes cracked successfully!\n")
 main()
