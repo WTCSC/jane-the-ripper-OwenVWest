@@ -29,4 +29,5 @@ Using the provided "hashes.txt" file for the hash list input and the provided "w
 As the sucsessfull hash cracks.
 ###### If the input shown is "failure" that means the input you gave for the hash type is not a valid option for this program
 Invalid file paths will cause the program to fail
-
+### Functionality of the program:
+![actiontreee](https://github.com/WTCSC/jane-the-ripper-OwenVWest/blob/main/decisiontree.png)
