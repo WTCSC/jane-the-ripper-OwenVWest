@@ -40,7 +40,7 @@ def main():
         print(item)
     type_out("\n-------Hash Cracking End-------")
     if outputlist == ["Failed"]:
-        print("\n\n[/] All hashes failed succsessfully\n")
+        print("\n\n[/] All hashes failed succsessfully, (Input a valid hash from the list of supported hash types)\n")
     else:
         print("\n\n[!] All hashes cracked successfully!\n")
 main()
