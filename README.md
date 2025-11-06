@@ -12,7 +12,7 @@ Run: "git clone https://github.com/WTCSC/jane-the-ripper-OwenVWest.git"
 
 ### Testing: 
 To test that the program is running properly, run the command "pytest -s JaneTheTest.py"  
-
+(The **JaneTheTest.py, JaneTheRipper.py, SHA1hash.txt, SHA256test.txt, wordlist.txt and hashes.txt** files will be needed to run tests)  
 ### Input examples:
 ###### (While having the "hashes.txt" and "wordlist.txt" files installed)
 Using the provided "hashes.txt" file for the hash list input and the provided "wordlist.txt" file for the words list input aswell as using the md5 hash option should return:
