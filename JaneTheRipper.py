@@ -28,6 +28,7 @@ def PasswordCrack(hash_file, wordlist_file, hashtype): #paths for hash and wordl
                     finallist.append(f"[+] Succeeded, {hashCurrent} --> {wordCurrent}")
                 else:
                     finallist.append(f"[-] Failed, {hashCurrent}")
+    print(finallist)
     return finallist
 def main():
     
